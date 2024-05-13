@@ -1,0 +1,48 @@
+/*
+Syntax for CSS:
+selector {
+	property: value;
+}
+*/
+
+/*setting a font selected/pasted from html*/
+/* asterisk(*) is the universal selector*/
+* {
+	font-family: "Roboto", sans-serif;
+  	font-weight: 400;
+}
+/* With this, the set font will be applied to all texts */
+
+
+/* Type selector and Multiple (if you used comma) */
+h1, p {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+}
+/*With this, the font will NOW only be applied to h1 and p*/
+
+/* ID Selector */
+#profile {
+	height: 250px;
+	width: 250px;
+	/* border-radius is used to modify the border's curve percentage */
+	border-radius: 50%; 
+}
+
+/* Setting up background */
+
+body {
+	background-color: #ffffff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+}
+
+#landing {
+	/* flex is making elements flexible, 
+	by default they will be arranged in rows */
+	display: flex;
+	flex-direction: column;
+	/* justify-content is setting center horizontally*/
+	justify-content: center;
+	/* align-items is setting center vertically*/
+	align-items: center;
+}
